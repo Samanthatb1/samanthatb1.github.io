@@ -18,7 +18,7 @@ const experiences = [
     title: "computer engineering @ uwaterloo",
     date: "2026-04",
     dateLabel: "Apr 2026",
-    headerImage: '/images/uwaterloo_5.png',
+    headerImage: '/images/uwaterloo_5.jpg',
     // headerImage: '/images/uwaterloo_1.jpg',
     description:`relevant courses: Deep Learning, Database Systems, Compilers, Data-Intensive Distributed Computing, Computer Networks, Programming for Performance (rust), operating systems
 
@@ -27,7 +27,7 @@ gpa: 3.9/4.0
 activities: Intramural water polo (3 years), Women in Engineering President, Orientation Leader
 
 awards: strobele engineering award ($24,000), Jim Kalbfleisch Award ($1,500),`,
-    images: ['/images/uwaterloo_3.png', '/images/uwaterloo_4.png', '/images/uwaterloo_1.jpg', '/images/waterpolo_1.jpeg', '/images/uwaterloo_2.png'],
+    images: ['/images/uwaterloo_3.jpg', '/images/uwaterloo_4.jpg', '/images/uwaterloo_1.jpg', '/images/waterpolo_1.jpeg', '/images/uwaterloo_2.jpg'],
   },
   {
     id: 2,
@@ -52,14 +52,14 @@ some of the conversations I got to be a part of included intimate chats with rep
 - partiful
 - the browser company (now part of Atlassian)
     `,
-    images: ['/images/hackny_3.JPG', '/images/hackny_4.JPG', '/images/hackny_5.jpg', '/images/hackny_6.JPG'],
+    images: ['/images/hackny_3.JPG', '/images/hackny_4.JPG', '/images/hackny_2.jpg'],
   },
   {
     id: 3,
     title: "google NYC internship",
     date: "2025-05",
     dateLabel: "May 2025",
-    headerImage: '/images/google_4.png',
+    headerImage: '/images/google_9.jpg',
     description:`team: offline google docs
 
 tech: javascript, sql, a/b testing, canary release
@@ -68,33 +68,33 @@ project 1: implemented fallback functionality for users creating google docs wit
 
 project 2: implemented offline emojis for users within google docs who started out online and then shifted to offline mode.  
     `,
-    images: ['/images/google_2.png', '/images/google_8.png', '/images/google_5.JPG', '/images/google_6.png', '/images/google_7.png'],
+    images: ['/images/google_2.jpg', '/images/google_8.jpg', '/images/google_1.jpg', '/images/google_6.jpg', '/images/google_7.jpg'],
   },
   {
     id: 4,
-    title: "stripe internship (again)",
+    title: "stripe seattle internship (again)",
     date: "2025-01",
     dateLabel: "Jan 2025",
-    headerImage: '/images/stripe_sum_2.png',
+    headerImage: '/images/stripe_win_5.jpg',
     description:`team: batch compute
 
 tech: sql, react, spark, airflow
 
 project: I built a monitoring + alerting system that proactively flags Spark jobs at risk of running out of memory by designing incident-informed heuristics (e.g., retries/failures, heap >95%, and consistency over time) and surfacing them in a dashboard with Slack alerts and heatmaps. This gave teams a clear, prioritized view of their most critical jobs and paired with an explanation of why they were marked as risky. I also interviewed numerous teams across Stripe to gather feedback on the tool and incorporated their requests into the final system.`,
-    images: ['/images/stripe_win_1.png', '/images/stripe_win_2.png', '/images/stripe_win_3.png', '/images/stripe_win_4.png'],
+    images: ['/images/stripe_win_1.jpg', '/images/stripe_win_2.jpg', '/images/stripe_win_3.jpg', '/images/stripe_win_4.jpg'],
   },
   {
     id: 5,
-    title: "stripe internship",
+    title: "stripe seattle internship",
     date: "2024-05",
     dateLabel: "May 2024",
-    headerImage: '/images/seattle_sum_6.png',
+    headerImage: '/images/seattle_sum_6.jpg',
     description:`team: large user onboarding
 
 tech: ruby, react, graphql, figma
     
 project: I worked with my team to build a new onboarding flow for publicly traded companies to replace a manual verification process that required placeholder data and document uploads. I implemented the system across React, Ruby, and GraphQL, adding API support for stock metadata and executive authorization—while working with designers, account managers, and legal to handle complex edge cases in account approval.`,
-    images: ['/images/stripe_sum_3.png', '/images/stripe_sum_5.png', '/images/stripe_sum_4.png'],
+    images: ['/images/stripe_sum_3.jpg', '/images/stripe_sum_5.jpg', '/images/stripe_sum_4.jpg'],
   },
   {
     id: 6,
@@ -114,7 +114,7 @@ Beyond UWaterloo, I collaborated with WiSE at the University of Toronto to bring
 
 I’m extremely grateful for the opportunity to lead this committee, and even more proud of where we have taken it over these years. What started out as a 10 person club in 2021 is now a 30+ member committee, empowering hundreds of students each year and building a community that will continue to grow.
     `,
-    images: ['/images/wie_2.JPG', '/images/wie_4.png', '/images/wie_6.png', '/images/wie_1.png', '/images/wie_5.png',],
+    images: ['/images/wie_2.JPG', '/images/wie_4.jpg', '/images/wie_6.jpg', '/images/wie_1.jpg', '/images/wie_5.jpg',],
   },
   {
     id: 7,
@@ -128,16 +128,16 @@ tech: typescript, lambda, amazon cdk
 
 project: I independently designed and built a data transfer pipeline to fix slow frontend dashboards that relied on long-running AWS Athena queries. The pipeline used EventBridge, Lambda, Athena, S3, and RDS to periodically pre-aggregate large datasets, reducing query latency from over a minute to a few seconds. These dashboards were used in the fulfillment centers to monitor metrics for the warehouse robots, and so improving the latency was important for the warehouse's daily workflows.
     `,
-    images: ['/images/amazon_2.png', '/images/amazon_3.png', '/images/amazon_4.png'],
+    images: ['/images/amazon_2.jpg', '/images/amazon_3.jpg', '/images/amazon_4.jpg'],
   },
   {
     id: 8,
     title: "amsterdam trip",
     date: "2025-05",
     dateLabel: "May 2025",
-    headerImage: '/images/ams_2.png',
+    headerImage: '/images/ams_2.jpg',
     description:`no tech here - a short trip to amsterdam and Belgium`,
-    images: ['/images/ams_3.png', '/images/ams_1.png'],
+    images: ['/images/ams_3.jpg', '/images/ams_1.jpg'],
   },
 ];
 

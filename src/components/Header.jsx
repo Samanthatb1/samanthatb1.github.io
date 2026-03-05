@@ -5,6 +5,13 @@ export default function Header() {
         <span className="site-name">samantha grieco</span>
         <span className="nav-divider">|</span>
         <a
+          href="mailto:samantha.ngrieco@gmail.com"
+          className="nav-link"
+        >
+          samantha.ngrieco@gmail.com
+        </a>
+        <span className="nav-divider">|</span>
+        <a
           href="https://www.goodreads.com/user/show/107264502-sam"
           target="_blank"
           rel="noopener noreferrer"
