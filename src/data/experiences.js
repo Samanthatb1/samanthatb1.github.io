@@ -68,7 +68,7 @@ project 1: implemented fallback functionality for users creating google docs wit
 
 project 2: implemented offline emojis for users within google docs who started out online and then shifted to offline mode.  
     `,
-    images: ['/images/google_2.jpg', '/images/google_8.jpg', '/images/google_1.jpg', '/images/google_6.jpg', '/images/google_7.jpg'],
+    images: ['/images/google_2.jpg', '/images/google_8.jpg', '/images/google_6.jpg', '/images/google_7.jpg'],
   },
   {
     id: 4,
