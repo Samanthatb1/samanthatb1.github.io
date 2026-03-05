@@ -2,7 +2,9 @@ import { useState, useCallback } from "react";
 import Header from "./components/Header";
 import ExperienceGrid from "./components/ExperienceGrid";
 import ExperienceModal from "./components/ExperienceModal";
+import Bookshelf from "./components/Bookshelf";
 import experiences from "./data/experiences";
+import books from "./data/books";
 
 export default function App() {
   const [selected, setSelected] = useState(null);
@@ -31,6 +33,7 @@ export default function App() {
         </p>
         <p className="site-quote__attribution">— thomas ligotti</p>
       </footer>
+      <Bookshelf books={books} />
       {selected && (
         <ExperienceModal experience={selected} onClose={handleClose} />
       )}
