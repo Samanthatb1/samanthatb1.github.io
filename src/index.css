@@ -40,6 +40,7 @@ a {
 button {
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
   cursor: pointer;
   border: none;
   background: none;
@@ -54,8 +55,15 @@ button {
 
 /* ── Header ────────────────────────────────────────────────── */
 .site-header {
-  padding: 28px 0 24px;
+  padding: 28px 0 20px;
   text-align: center;
+}
+
+.nav-subtitle {
+  margin: 18px 0 0;
+  font-size: 0.80rem;
+  color: #444343;
+  letter-spacing: 0.03em;
 }
 
 .site-nav {

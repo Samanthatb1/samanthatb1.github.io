@@ -29,6 +29,7 @@ export default function Header() {
           linkedin
         </a>
       </nav>
+      <p className="nav-subtitle">click each box to learn more</p>
     </header>
   );
 }
