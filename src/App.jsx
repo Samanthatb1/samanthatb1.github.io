@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Header from "./components/Header";
 import ExperienceGrid from "./components/ExperienceGrid";
 import ExperienceModal from "./components/ExperienceModal";
@@ -8,6 +8,14 @@ import books from "./data/books";
 
 export default function App() {
   const [selected, setSelected] = useState(null);
+
+  useEffect(() => {
+    const imagePaths = experiences.flatMap((exp) => exp.images ?? []).filter(Boolean);
+    imagePaths.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   const handleSelect = useCallback((exp) => {
     setSelected(exp);
