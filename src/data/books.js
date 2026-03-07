@@ -274,6 +274,16 @@ const books = [
     height: 204,
   },
   {
+    id: 26,
+    title: "the cruel prince",
+    author: "holly black",
+    color: "#fcffcf",
+    textColor: "#3a3b2f",
+    accentColor: "#FFD700",
+    width: 38,
+    height: 190,
+  },
+  {
     id: 27,
     title: "they both die at the end",
     author: "adam silvera",
