@@ -12,6 +12,28 @@
  *   height      – spine height in px (~150–210px; varies like a real shelf)
  */
 
+const WASH_COLOR = "#f4efe8";
+
+function blendHexColor(hex, blendHex, amount) {
+  const normalizedHex = hex.replace("#", "");
+  const normalizedBlend = blendHex.replace("#", "");
+
+  const red = parseInt(normalizedHex.slice(0, 2), 16);
+  const green = parseInt(normalizedHex.slice(2, 4), 16);
+  const blue = parseInt(normalizedHex.slice(4, 6), 16);
+
+  const blendRed = parseInt(normalizedBlend.slice(0, 2), 16);
+  const blendGreen = parseInt(normalizedBlend.slice(2, 4), 16);
+  const blendBlue = parseInt(normalizedBlend.slice(4, 6), 16);
+
+  const mixChannel = (channel, blendChannel) =>
+    Math.round(channel + (blendChannel - channel) * amount)
+      .toString(16)
+      .padStart(2, "0");
+
+  return `#${mixChannel(red, blendRed)}${mixChannel(green, blendGreen)}${mixChannel(blue, blendBlue)}`;
+}
+
 const books = [
   {
     id: 1,
@@ -49,7 +71,7 @@ const books = [
     author: "george orwell",
     color: "#c41e1e",
     textColor: "#ffffff",
-    accentColor: "#61300a",
+    accentColor: "#000000",
     width: 40,
     height: 196,
   },
@@ -337,7 +359,7 @@ const books = [
     id: 33,
     title: "the secret history",
     author: "donna tartt",
-    color: "#d1a700",
+    color: "#d9b31c",
     textColor: "#000000",
     accentColor: "#000000",
     width: 50,
@@ -347,12 +369,17 @@ const books = [
     id: 34,
     title: "a court of thorns and roses",
     author: "sarah j. maas",
-    color: "#CC0000",
+    color: "#c92828",
     textColor: "#ffffff",
     accentColor: "#aa5555",
     width: 40,
     height: 198,
   },
-];
+].map((book) => ({
+  ...book,
+  // Add a gentle warm wash so the spines feel slightly softer.
+  color: blendHexColor(book.color, WASH_COLOR, 0.11),
+  accentColor: blendHexColor(book.accentColor, WASH_COLOR, 0.14),
+}));
 
 export default books;
