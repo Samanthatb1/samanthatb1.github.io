@@ -330,7 +330,7 @@ const books = [
     color: "#260A05",
     textColor: "#FFFFFF",
     accentColor: "#911703",
-    width: 30,
+    width: 25,
     height: 198,
   },
   {
@@ -340,7 +340,7 @@ const books = [
     color: "#d1a700",
     textColor: "#000000",
     accentColor: "#000000",
-    width: 30,
+    width: 50,
     height: 198,
   },
 ];
