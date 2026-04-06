@@ -138,6 +138,19 @@ project: I independently designed and built a data transfer pipeline to fix slow
     description:`no tech here - a short trip to amsterdam and Belgium`,
     images: ['/images/ams_3.jpg', '/images/ams_1.jpg'],
   },
+  {
+    id: 9,
+    title: "esch pitch competition",
+    date: "2026-03",
+    dateLabel: "march 2026",
+    headerImage: '/images/pitch_3.jpg',
+    description:`
+    During the development of my fourth-year design project at the University of Waterloo, my group was awarded a $5,000 prize from the Norman Esch Entrepreneurship Awards for Capstone Design. This competition consisted of multiple rounds of pitches from fourth-year engineering teams to industry judges, focusing on both technical details and business models and expansion plans. My team developed AlertDriver, which is a real-time accessibility tool for deaf and hard-of-hearing drivers that displays audio cues such as sirens, honking horns, and passenger speech.
+    
+https://uwaterloo.ca/news/students-win-more-100000-capstone-design-pitch-contest
+    `,
+    images: ['/images/pitch_2.jpg', '/images/pitch_1.jpg', '/images/pitch_4.jpg'],
+  },
 ];
 
 export default experiences;
