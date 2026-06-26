@@ -498,3 +498,42 @@ button {
   background: #ccc;
   border-radius: 2px;
 }
+
+/* ── LPS gallery ───────────────────────────────────────────── */
+.lps-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  padding: 20px 100px 60px;
+  align-content: start;
+}
+
+.lps-grid__cell {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.lps-grid__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.28);
+  filter: brightness(1.18);
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .lps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 20px 24px 48px;
+  }
+}
+
+@media (max-width: 540px) {
+  .lps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 16px 16px 40px;
+  }
+}
