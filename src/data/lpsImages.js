@@ -118,7 +118,6 @@ const lpsImages = [
   { src: '/lps/DSC01288.JPG', animal: 'magical' },
   { src: '/lps/DSC01395.JPG', animal: 'magical' },
   { src: '/lps/DSC01280.JPG', animal: 'magical' },
-  { src: '/lps/DSC01345.JPG', animal: 'magical' },
   { src: '/lps/DSC01402.JPG', animal: 'magical' },
   { src: '/lps/DSC01406.JPG', animal: 'magical' },
   { src: '/lps/DSC01408.JPG', animal: 'baby' },
