@@ -375,6 +375,26 @@ const books = [
     width: 40,
     height: 198,
   },
+  {
+    id: 35,
+    title: "pride and prejudice",
+    author: "jane austen",
+    color: "#ff9eca",
+    textColor: "#000000",
+    accentColor: "#a10048",
+    width: 35,
+    height: 190,
+  },
+  {
+    id: 35,
+    title: "dracula",
+    author: "bram stoker",
+    color: "#000000",
+    textColor: "#f70000",
+    accentColor: "#f70000",
+    width: 50,
+    height: 170,
+  },
 ].map((book) => ({
   ...book,
   // Add a gentle warm wash so the spines feel slightly softer.
