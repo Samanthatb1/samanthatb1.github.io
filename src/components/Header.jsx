@@ -12,12 +12,12 @@ export default function Header() {
         </a>
         <span className="nav-divider">|</span>
         <a
-          href="https://www.goodreads.com/user/show/107264502-sam"
+          href="https://sngrieco.substack.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link"
         >
-          goodreads
+          substack
         </a>
         <span className="nav-divider">|</span>
         <a
