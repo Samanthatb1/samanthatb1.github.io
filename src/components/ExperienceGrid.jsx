@@ -1,9 +1,9 @@
 import ExperienceCard from "./ExperienceCard";
 
 export default function ExperienceGrid({ experiences, onSelect, selectedId }) {
-  const sorted = [...experiences].sort((a, b) =>
-    b.date.localeCompare(a.date)
-  );
+  const sorted = experiences
+    .filter((experience) => !experience.hidden)
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <main className="experience-grid">

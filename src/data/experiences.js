@@ -10,6 +10,7 @@
  *   headerImage – path to the main card image (put files in /public/images/)
  *   description – paragraph shown in the modal
  *   images      – (optional) array of extra image paths shown below the description
+ *   hidden      – (optional) set to true to keep the experience off the site
  */
 
 const experiences = [
@@ -132,6 +133,7 @@ project: I independently designed and built a data transfer pipeline to fix slow
   {
     id: 8,
     title: "amsterdam trip",
+    hidden: true,
     date: "2025-05",
     dateLabel: "May 2025",
     headerImage: '/images/ams_2.jpg',
@@ -150,6 +152,27 @@ project: I independently designed and built a data transfer pipeline to fix slow
 https://uwaterloo.ca/news/students-win-more-100000-capstone-design-pitch-contest
     `,
     images: ['/images/pitch_2.jpg', '/images/pitch_1.jpg', '/images/pitch_4.jpg'],
+  },
+  {
+    id: 10,
+    title: "yc startup school",
+    date: "2026-07",
+    dateLabel: "Jul 2026",
+    headerImage: '/images/yc_1_cover.png',
+    description: `
+Show up alone.
+
+When I was accepted to attend YC's Startup School event for two days, I didn't know a single other friend who would be attending. I wondered if I should still go, worried I might feel awkward and alone.
+
+My fear couldn't have been further from the truth. Not only did I get to hear from prominent tech leaders such as Sam Altman, Boris Cherny, Jeff Dean, and Peter Steinberger, but I also made genuine friendships with people I likely never would've crossed paths with otherwise.
+
+Showing up alone forced me to walk up to random groups of friends and introduce myself. It forced me to attend breakfast events and after-parties to meet people so that I'd have someone to chat with the following day. It made me determined to actually invest in the friendships I was making; if I found myself alone the next day, I knew I had people I'd recently met whom I could fall back on.
+
+Some of the most impactful sessions were YC's intimate women founders panel and a female founders brunch hosted by Sydney Eze. I met some incredible women pursuing different careers across startups and research, and these events made it easier for me to push myself out there.
+
+I documented some of my takeaways from the presentations here: https://sngrieco.substack.com/p/5-minute-yc-startup-school-takeaways
+    `,
+    images: ['/images/yc_2.png', '/images/yc_3.png', '/images/yc_4.png', '/images/yc_5.png'],
   },
 ];
 
